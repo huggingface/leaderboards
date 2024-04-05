@@ -6,5 +6,9 @@
       title: Introduction
     - local: finding
       title: Find a leaderboard
-    - local: building
-      title: Build your leaderboard
+- title: "Building your leaderboard"
+  sections:
+    - local: building/build_from_template
+      title: Getting started with the templates
+    - local: building/features
+      title: Extra features

@@ -1,6 +1,6 @@
 # Introduction
 
-## What are leaderboards?
+## 🏅 What are leaderboards?
 
 `Leaderboards` are rankings of machine learning artefacts (most frequently generative models, but also embeddings, classifiers, ...) depending on their performance on given tasks across relevant modalities.
 
@@ -12,11 +12,11 @@ So far on the Hub, we have leaderboards for text, image, video and audio generat
 
 Some specific leaderboards reflect human performance obtained through a human-based voting system, where people compare models and vote for the better one on a given task. These spaces are called `arenas`.
 
-## How to use leaderboards properly
+## ⚖️ How to use leaderboards properly
 
 There are certain things to keep in mind when using a leaderboard.
 
-1) Comparing apples to apples
+### 1) Comparing apples to apples
 
 Much like in sports, where we have weight categories to keep rankings fair, when evaluating model artefacts, you want to compare similar items.
 
@@ -25,11 +25,11 @@ For example, when comparing models, you want them to be
 - at the same mathematical precision: the lower the precision of your model, the smaller and faster, but this can affect performance 
 - in the same category: pre-trained models are good generalist bases, where fine-tuned models are more specialised and better performing on specific tasks, and merged models tend to have scores higher than their actual performance.
 
-2) Comparing across a spectrum of tasks
+### 2) Comparing across a spectrum of tasks
 
 Though good generalist machine learning models are becoming increasingly common, it's not because an LLM is good at chess that it will output good poetry. If you want to select the correct model for your use case, you need to look at its scores and performance across a range of leaderboards and tasks, before testing it yourself to make sure it fits your needs.
 
-3) Being careful about evaluation limitations, especially for models
+### 3) Being careful about evaluation limitations, especially for models
 
 A number of evaluations are very easy to cheat, accidentally or not: if a model has already seen the data used for testing, its performance will be high "artificially", and reflect memorisation rather than any actual capability on the task. This mechanism is called `contamination`. 
 

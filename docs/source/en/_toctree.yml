@@ -1,14 +1,16 @@
 - title: "Leaderboards on the Hub"
   sections:
-    - local: index
-      title: Home
-    - local: intro
-      title: Introduction
-    - local: finding
-      title: Find a leaderboard
-- title: "Building your leaderboard"
+    - local: leaderboards/intro
+      title: Introduction to leaderboards
+    - local: leaderboards/finding_page
+      title: Finding a leaderboard
+    - local: leaderboards/building_page
+      title: Building your leaderboard
+    - local: leaderboards/extras
+      title: Extras
+- title: "Open LLM Leaderboard"
   sections:
-    - local: building/build_from_template
-      title: Getting started with the templates
-    - local: building/features
-      title: Extra features
+    - local: open_llm_leaderboard/about
+      title: About
+    - local: open_llm_leaderboard/faq
+      title: FAQ

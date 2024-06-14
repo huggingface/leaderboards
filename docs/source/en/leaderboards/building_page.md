@@ -2,7 +2,7 @@
 
 To build a leaderboard, the easiest is to look at our demo templates [here](https://huggingface.co/demo-leaderboard-backend)
 
-## Contents
+## 📏 Contents
 
 Our demo leaderboard template contains 4 sections: two spaces and two datasets.
 
@@ -11,7 +11,7 @@ Our demo leaderboard template contains 4 sections: two spaces and two datasets.
 - The `results dataset` stores the results of the evaluations. It is updated by the backend when evaluations are finished, and pulled by the frontend for display.
 - The `backend space` is optional, if you run evaluations manually or on your own cluster. It looks at currently pending submissions, and launches their evaluation using either the Eleuther AI Harness (`lm_eval`) or HuggingFace's `lighteval`, then updates the evaluation status and stores the results. It needs to be edited with your own evaluation suite to fit your own use cases if you use something more specific.
 
-## Getting started
+## 🪛 Getting started
 
 You should copy the two spaces and the two datasets to your org to get started with your own leaderboard!
 
@@ -43,7 +43,7 @@ Depending on the suite you want to learn, this is the part which is likely to ta
 
 However, this is optional if you only want to use the leaderboard to display results, or plan on running evaluations manually/on your own compute source.
 
-## Tips and tricks
+## 🔧 Tips and tricks
 
 Leaderboards setup in the above fashion are adjustable, from providing fully automated evaluations (a user submits a model, it is evaluated, etc) to fully manual (every new evaluation is ran with human control) to semi-automatic. 
 
@@ -54,4 +54,3 @@ When running the backend in Spaces, you can either :
 If you run evaluations on your own compute source, you can still grab some of the files from the backend to pull and push the `results` and `request` datasets.
 
 Once your leaderboard is setup, don't forget to set its metadata so it gets indexed by our Leaderboard Finder. See "What do the tags mean?" in the [LeaderboardFinder](https://huggingface.co/spaces/leaderboards/LeaderboardFinder) space.
-

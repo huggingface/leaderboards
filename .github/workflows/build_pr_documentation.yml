@@ -22,4 +22,3 @@ jobs:
       languages: en
       custom_container: huggingface/leaderboards
       additional_args: --not_python_module
-  

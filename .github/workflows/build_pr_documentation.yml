@@ -17,8 +17,8 @@ jobs:
     with:
       commit_sha: ${{ github.event.pull_request.head.sha }}
       pr_number: ${{ github.event.number }}
-      package: hf-leaderboards-documentation
-      package_name: leaderboards
+      package: leaderboards
+      package_name: leaderboards-documentation
       languages: en
       custom_container: huggingface/leaderboards
       additional_args: --not_python_module

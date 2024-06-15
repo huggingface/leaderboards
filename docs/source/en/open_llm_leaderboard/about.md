@@ -1,7 +1,6 @@
-# ABOUT
+# What is the Open LLM Leaderboard
 
 With the plethora of large language models (LLMs) and chatbots being released week upon week, often with grandiose claims of their performance, it can be hard to filter out the genuine progress that is being made by the open-source community and which model is the current state of the art.
-🤗 Submit a model for automated evaluation on the 🤗 GPU cluster on the "Submit" page!
 The leaderboard's backend runs the great [Eleuther AI Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) - read more details below!
 
 ### Tasks
@@ -23,8 +22,8 @@ You can find:
 - details on the input/outputs for the models in the `details` of each model, which you can access by clicking the 📄 emoji after the model name
 - community queries and running status in the `requests` Hugging Face dataset: https://huggingface.co/datasets/open-llm-leaderboard/requests
 If a model's name contains "Flagged", this indicates it has been flagged by the community, and should probably be ignored! Clicking the link will redirect you to the discussion about the model.
----------------------------
-## REPRODUCIBILITY
+
+## Reproducibility
 To reproduce our results, here are the commands you can run, using [this version](https://github.com/EleutherAI/lm-evaluation-harness/tree/b281b0921b636bc36ad05c0b0b0763bd6dd43463) of the Eleuther AI Harness:
 
 ```bash
@@ -48,8 +47,8 @@ The tasks and few shots parameters are:
 Side note on the baseline scores: 
 - for log-likelihood evaluation, we select the random baseline
 - for GSM8K, we select the score obtained in the paper after finetuning a 6B model on the full GSM8K training set for 50 epochs
----------------------------
-## RESOURCES
+
+## Resources
 ### Quantization
 To get more information about quantization, see:
 - 8 bits: [blog post](https://huggingface.co/blog/hf-bitsandbytes-integration), [paper](https://arxiv.org/abs/2208.07339)

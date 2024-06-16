@@ -1,10 +1,17 @@
+# Setup
 
-To build the documentation without a Python module, use the following command:
 ```bash
-doc-builder build docs/source/en --not_python_module --build_dir build_dir
+pip install watchdog git+https://github.com/huggingface/doc-builder.git
 ```
 
-To preview built documentation, use the following command:
+# Build Documentation
+
+```bash
+doc-builder build leaderboard docs/source/en --build_dir build_dir --not_python_module
+```
+
+# Preview Documentation
+
 ```bash
 doc-builder preview leaderboard docs/source/en/ --not_python_module
 ```

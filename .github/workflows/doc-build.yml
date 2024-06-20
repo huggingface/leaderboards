@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+      - doc-builder*
+      - v*-release
+      - use_templates
     paths:
       - 'docs/source/**'
       - 'assets/**'

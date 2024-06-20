@@ -15,7 +15,6 @@ jobs:
     with:
       commit_sha: ${{ github.sha }}
       package: leaderboards
-      package_name: leaderboards-documentation
       languages: en
       additional_args: --not_python_module
     secrets:

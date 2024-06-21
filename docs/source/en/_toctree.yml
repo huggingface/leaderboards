@@ -1,3 +1,5 @@
+- local: index
+  title: 🤗 Leaderboards
 - title: "Leaderboards on the Hub"
   sections:
     - local: leaderboards/intro

@@ -1,7 +1,7 @@
 # Leaderboards on the Hub
 
 As the number of open and closed source machine learning models explodes, it can be very hard to find the correct model for your project. 
-This is why we started `Leaderboards on the Hub`, to gather Machine Learning leaderboards on the Hugging Face Hub and support evaluation creators. 
+This is why we started `Leaderboards on the Hub`, to gather machine learning leaderboards on the Hugging Face Hub and support evaluation creators. 
 Explore machine learning rankings to find the best model for your use case, or build your own leaderboard, to test specific capabilities which interest you and the community.
 
 <a class="!no-underline border dark:border-gray-700 p-5 rounded-lg shadow hover:shadow-lg" href="./leaderboards/intro">

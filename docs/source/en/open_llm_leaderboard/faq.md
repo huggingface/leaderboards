@@ -19,8 +19,6 @@ How can I report an evaluation failure?
 - *As we store the logs for all models, feel free to create an issue, **where you link to the requests file of your model** (look for it [here](https://huggingface.co/datasets/open-llm-leaderboard/requests/tree/main)), so we can investigate! If the model failed due to a problem on our side, we'll relaunch it right away!* 
 *Note: Please do not re-upload your model under a different name, it will not help*
 
----------------------------
-
 ## RESULTS
 What kind of information can I find?
 - *Let's imagine you are interested in the Yi-34B results. You have access to 3 different information categories:*
@@ -37,22 +35,18 @@ What is this concept of "flagging"?
 My model has been flagged improperly, what can I do?
 - *Every flagged model has a discussion associated with it - feel free to plead your case there, and we'll see what to do together with the community.*
 
----------------------------
-
 ## HOW TO SEARCH FOR A MODEL
 Search for models in the leaderboard by:
 1. Name, e.g., *model_name*
 2. Multiple names, separated by `;`, e.g., *model_name1;model_name2*
 3. License, prefix with `Hub License:...`, e.g., *Hub License: MIT*
 4. Combination of name and license, order is irrelevant, e.g., *model_name; Hub License: cc-by-sa-4.0*
----------------------------
 
 ## EDITING SUBMISSIONS
 I upgraded my model and want to re-submit, how can I do that?
 - *Please open an issue with the precise name of your model, and we'll remove your model from the leaderboard so you can resubmit. You can also resubmit directly with the new commit hash!* 
 I need to rename my model, how can I do that?
 - *You can use @Weyaxi 's [super cool tool](https://huggingface.co/spaces/Weyaxi/open-llm-leaderboard-renamer) to request model name changes, then open a discussion where you link to the created pull request, and we'll check them and merge them as needed.*
----------------------------
 
 ## OTHER
 Why do you differentiate between pretrained, continuously pretrained, fine-tuned, merges, etc?

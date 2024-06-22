@@ -23,7 +23,7 @@ You can find:
 - details on the input/outputs for the models in the `details` of each model, which you can access by clicking the 📄 emoji after the model name
 - community queries and running status in the `requests` Hugging Face dataset: https://huggingface.co/datasets/open-llm-leaderboard/requests
 If a model's name contains "Flagged", this indicates it has been flagged by the community, and should probably be ignored! Clicking the link will redirect you to the discussion about the model.
----------------------------
+
 ## REPRODUCIBILITY
 To reproduce our results, here are the commands you can run, using [this version](https://github.com/EleutherAI/lm-evaluation-harness/tree/b281b0921b636bc36ad05c0b0b0763bd6dd43463) of the Eleuther AI Harness:
 
@@ -48,7 +48,7 @@ The tasks and few shots parameters are:
 Side note on the baseline scores: 
 - for log-likelihood evaluation, we select the random baseline
 - for GSM8K, we select the score obtained in the paper after finetuning a 6B model on the full GSM8K training set for 50 epochs
----------------------------
+
 ## RESOURCES
 ### Quantization
 To get more information about quantization, see:
@@ -57,6 +57,6 @@ To get more information about quantization, see:
 ### Useful links
 - [Community resources](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions/174)
 - [Collection of best models](https://huggingface.co/collections/open-llm-leaderboard/llm-leaderboard-best-models-652d6c7965a4619fb5c27a03)
-### Other cool leaderboards:
+### Other cool leaderboards
 - [LLM safety](https://huggingface.co/spaces/AI-Secure/llm-trustworthy-leaderboard)
 - [LLM performance](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)

@@ -15,15 +15,15 @@ Our demo leaderboard template contains 4 sections: two spaces and two datasets.
 
 You should copy the two spaces and the two datasets to your org to get started with your own leaderboard!
 
-### Setting up the front end
+### Setting up the frontend
 
-To get started on your own front end leaderboard, you will need to edit 2 files:
+To get started on your own frontend leaderboard, you will need to edit 2 files:
 - src/envs.py to define your own environment variable (like the org name in which this has been copied)
-- src/about.py with the tasks and number of few_shots you want for your tasks
+- src/about.py with the tasks and number of few-shots you want for your tasks
 
 ### Setting up fake results to initialize the leaderboard
 
-Once this is done, you need to edit the "fake results" file to fit the format of your tasks: in the sub dictionary `results`, replace task_name1 and metric_name by the correct values you defined in Tasks above.
+Once this is done, you need to edit the "fake results" file to fit the format of your tasks: in the sub dictionary `results`, replace task_name1 and metric_name by the correct values you defined in tasks above.
 ```
     "results": {
         "task_name1": {
@@ -32,7 +32,7 @@ Once this is done, you need to edit the "fake results" file to fit the format of
     }
 ```
 
-At this step, you should alread have some results displayed in the front end!
+At this step, you should already have some results displayed in the frontend!
 
 Any more model you want to add will need to have a file in request and one in result, following the same template as already present files.
 
@@ -45,7 +45,7 @@ However, this is optional if you only want to use the leaderboard to display res
 
 ## 🔧 Tips and tricks
 
-Leaderboards setup in the above fashion are adjustable, from providing fully automated evaluations (a user submits a model, it is evaluated, etc) to fully manual (every new evaluation is ran with human control) to semi-automatic. 
+Leaderboards setup in the above fashion are adjustable, from providing fully automated evaluations (a user submits a model, it is evaluated, etc) to fully manual (every new evaluation is run with human control) to semi-automatic. 
 
 When running the backend in Spaces, you can either :
 - upgrade your backend space to the compute power level you require, and run your evaluations locally (using `lm_eval`, `lighteval`, or your own evaluation suite); this is the most general solution across evaluation types, but it will limit you in terms of model size possible, as you might not be able to fit the biggest models in the backend

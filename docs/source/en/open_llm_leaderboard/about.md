@@ -59,7 +59,3 @@ To get more information about quantization, see:
 ### Useful links
 - [Community resources](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions/174)
 - [Collection of best models](https://huggingface.co/collections/open-llm-leaderboard/llm-leaderboard-best-models-652d6c7965a4619fb5c27a03)
-
-### Other cool leaderboards
-- [LLM safety](https://huggingface.co/spaces/AI-Secure/llm-trustworthy-leaderboard)
-- [LLM performance](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)

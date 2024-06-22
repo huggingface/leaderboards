@@ -6,16 +6,16 @@ Explore machine learning rankings to find the best model for your use case, or b
 
 <div class="mt-10">
   <div class="w-full flex flex-col space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:gap-5">
-    <a class="!no-underline border dark:border-gray-700 p-5 rounded-full shadow hover:shadow-lg" href="./leaderboards/intro">
-      <div class="w-full text-center bg-gradient-to-br from-green-400 to-green-500 rounded-full py-1.5 font-semibold mb-5 text-white text-lg leading-relaxed">Start here</div>
+    <a class="!no-underline border dark:border-gray-700 p-5 rounded-lg shadow hover:shadow-lg" href="./leaderboards/intro">
+      <div class="w-full text-center bg-gradient-to-br from-green-400 to-green-500 rounded-lg py-1.5 font-semibold mb-5 text-white text-lg leading-relaxed">Start here</div>
       <p class="text-gray-700">A small introduction to all things leaderboards on the hub.</p>
     </a>
-    <a class="!no-underline border dark:border-gray-700 p-5 rounded-full shadow hover:shadow-lg" href="./leaderboards/finding_page">
-      <div class="w-full text-center bg-gradient-to-br from-orange-400 to-orange-500 rounded-full py-1.5 font-semibold mb-5 text-white text-lg leading-relaxed">Find</div>
+    <a class="!no-underline border dark:border-gray-700 p-5 rounded-lg shadow hover:shadow-lg" href="./leaderboards/finding_page">
+      <div class="w-full text-center bg-gradient-to-br from-orange-400 to-orange-500 rounded-lg py-1.5 font-semibold mb-5 text-white text-lg leading-relaxed">Find</div>
       <p class="text-gray-700">All the different ways you can look for and find the correct leaderboard for your use case.</p>
     </a>
-    <a class="!no-underline border dark:border-gray-700 p-5 rounded-full shadow hover:shadow-lg" href="./leaderboards/building_page">
-      <div class="w-full text-center bg-gradient-to-br from-purple-400 to-purple-500 rounded-full py-1.5 font-semibold mb-5 text-white text-lg leading-relaxed">Build</div>
+    <a class="!no-underline border dark:border-gray-700 p-5 rounded-lg shadow hover:shadow-lg" href="./leaderboards/building_page">
+      <div class="w-full text-center bg-gradient-to-br from-purple-400 to-purple-500 rounded-lg py-1.5 font-semibold mb-5 text-white text-lg leading-relaxed">Build</div>
       <p class="text-gray-700">How to build your own leaderboard.</p>
     </a>
   </div>

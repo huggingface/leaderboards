@@ -59,3 +59,6 @@ Side note on the baseline scores:
 - for log-likelihood evaluation, we select the random baseline
 - for GSM8K, we select the score obtained in the paper after finetuning a 6B model on the full GSM8K training set for 50 epochs
 
+## Blogs
+
+During the lige of the leaderboard, we wrote 2 blogs that you can find [here](https://huggingface.co/blog/open-llm-leaderboard-mmlu) and [here](https://huggingface.co/blog/open-llm-leaderboard-drop)

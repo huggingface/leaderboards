@@ -2,7 +2,7 @@
 
 With the plethora of large language models (LLMs) and chatbots being released week upon week, often with grandiose claims of their performance, it can be hard to filter out the genuine progress that is being made by the open-source community and which model is the current state of the art.
 
-The leaderboard's backend runs the great [Eleuther AI Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness)!
+We wrote a release blog [here](https://huggingface.co/spaces/open-llm-leaderboard/blog) to explain why we introduced this leaderboard!
 
 ## Tasks
 

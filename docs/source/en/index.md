@@ -13,7 +13,7 @@ Explore machine learning rankings to find the best model for your use case, or b
       <div class="w-full text-center bg-gradient-to-br from-green-400 to-green-500 rounded-lg py-1.5 font-semibold mb-5 text-white text-lg leading-relaxed">Leaderboards on the Hub</div>
       <p class="text-gray-700">A small introduction to all things leaderboards on the hub.</p>
     </a>
-    <a class="!no-underline border dark:border-gray-700 p-5 rounded-lg shadow hover:shadow-lg" href="./open_llm_leaderboard/about.md">
+    <a class="!no-underline border dark:border-gray-700 p-5 rounded-lg shadow hover:shadow-lg" href="./open_llm_leaderboard/about">
       <div class="w-full text-center bg-gradient-to-br from-orange-400 to-orange-500 rounded-lg py-1.5 font-semibold mb-5 text-white text-lg leading-relaxed">Open LLM Leaderboard</div>
       <p class="text-gray-700">Curious about the Open LLM Leaderboard? Start here!</p>
     </a>

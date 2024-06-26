@@ -20,7 +20,7 @@ If this step fails, follow the error messages to debug your model before submitt
 **Notes:**
 
 - Ensure your model is public!
-- Your model should be in Safetensors.
+- Your model should be in [Safetensors](https://github.com/huggingface/safetensors).
 - If your model needs `use_remote_code=True`, we do not support this option yet but are working on adding it. Stay posted!
 
 ### 2. Fill Up Your Model Card:

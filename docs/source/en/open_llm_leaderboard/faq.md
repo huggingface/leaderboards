@@ -2,71 +2,114 @@
 
 ## Submissions
 
-My model requires `trust_remote_code=True`, can I submit it?
-- *We only support models that have been integrated into a stable version of the `transformers` library for automatic submission, as we don't want to run possibly unsafe code on our cluster.*
+**Q: Can I submit a model that requires `trust_remote_code=True`?**
 
-What about models of type X? 
-- *We only support models that have been integrated into a stable version of the `transformers` library for automatic submission.*
-How can I follow when my model is launched?
-- *You can look for its request file [here](https://huggingface.co/datasets/open-llm-leaderboard/requests) and follow the status evolution, or directly in the queues above the submit form.*
+A: We only accept models that have been integrated into a stable version of the `transformers` library to ensure the safety and stability of code executed on our cluster.
 
-My model disappeared from all the queues, what happened?
-- *A model disappearing from all the queues usually means that there has been a failure. You can check if that is the case by looking for your model [here](https://huggingface.co/datasets/open-llm-leaderboard/requests).*
+**Q: Are models of type X supported?**
 
-What causes an evaluation failure?
-- *Most of the failures we get come from problems in the submissions (corrupted files, config problems, wrong parameters selected for eval ...), so we'll be grateful if you first make sure you have followed the steps in `About`. However, from time to time, we have failures on our side (hardware/node failures, problems with an update of our backend, connectivity problems ending up in the results not being saved, ...).*
+A: For now, submission is limited to models that are included in a stable version of the transformers library.
 
-How can I report an evaluation failure?
-- *As we store the logs for all models, feel free to create an issue, **where you link to the requests file of your model** (look for it [here](https://huggingface.co/datasets/open-llm-leaderboard/requests/tree/main)), so we can investigate! If the model failed due to a problem on our side, we'll relaunch it right away!* 
-*Note: Please do not re-upload your model under a different name, it will not help*
+**Q: Can I evaluate my model with a chat template?**
+
+A: Sure! When submitting a model, you can choose whether to evaluate it using a chat template, which activates automatically for chat models.
+
+**Q: How can I track the status of my model submission?**
+
+A: You can monitor your model's status by checking the request file here ([https://huggingface.co/datasets/open-llm-leaderboard/requests](https://huggingface.co/datasets/open-llm-leaderboard/requests)) or viewing the queues above the submit form.
+
+**Q: What happens if my model disappears from all queues?**
+
+A: A model’s disappearance typically indicates a failure. You can find your model in requests dataset here ([https://huggingface.co/datasets/open-llm-leaderboard/requests](https://huggingface.co/datasets/open-llm-leaderboard/requests)) and check its status.
+
+**Q: What causes an evaluation failure?**
+
+A: Failures often stem from submission issues such as corrupted files or configuration errors. Please review the steps in About tab before submitting. Occasionally, failures are due to hardware or connectivity issues on our end.
+
+**Q: How do I report an evaluation failure?**
+
+A: Please create an issue in the Community section ([https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions)), linking your model’s request file for further investigation. If the error is on our side, we will relaunch your model promptly.
+
+*Do not re-upload your model under a different name as it will not resolve the issue.*
+
 
 ## Results
 
-What kind of information can I find?
-- *Let's imagine you are interested in the Yi-34B results. You have access to 3 different information categories:*
-      - *The [request file](https://huggingface.co/datasets/open-llm-leaderboard/requests/blob/main/01-ai/Yi-34B_eval_request_False_bfloat16_Original.json): it gives you information about the status of the evaluation*
-      - *The [aggregated results folder](https://huggingface.co/datasets/open-llm-leaderboard/results/tree/main/01-ai/Yi-34B): it gives you aggregated scores, per experimental run*
-      - *The [details dataset](https://huggingface.co/datasets/open-llm-leaderboard/details_01-ai__Yi-34B/tree/main): it gives you the full details (scores and examples for each task and a given model)*
+**Q: What information is available about my model's evaluation results?**
 
-Why do models appear several times in the leaderboard? 
-- *We run evaluations with user-selected precision and model commit. Sometimes, users submit specific models at different commits and at different precisions (for example, in float16 and 4bit to see how quantization affects performance). You should be able to verify this by displaying the `precision` and `model sha` columns in the display. If, however, you see models appearing several times with the same precision and hash commit, this is not normal.*
+A: For each model, you can access:
 
-What is this concept of "flagging"?
-- *This mechanism allows users to report models that have unfair performance on the leaderboard. This contains several categories: exceedingly good results on the leaderboard because the model was (maybe accidentally) trained on the evaluation data, models that are copies of other models not attributed properly, etc.*
+- **Request File**: Status of the evaluation.
+- **Contents Dataset:** A full dataset that contains information about all evaluated models.
+- **Details Dataset**: Comprehensive breakdown of scores and task examples.
 
-My model has been flagged improperly, what can I do?
-- *Every flagged model has a discussion associated with it - feel free to plead your case there, and we'll see what to do together with the community.*
+**Q: Why do some models appear multiple times in the leaderboard?**
 
-## How to search for a model
+A: Models may appear multiple times due to submissions under different commits or precision settings, like float16 and 4bit. You can check this by clicking on the `Model sha` and `Precision` buttons under “Select Columns to Display” section on the main page. For evaluation, precision helps to assess the impact of quantization. 
 
-Search for models in the leaderboard by:
-1. Name, e.g., *model_name*
-2. Multiple names, separated by `;`, e.g., *model_name1;model_name2*
-3. License, prefix with `Hub License:...`, e.g., *Hub License: MIT*
-4. Combination of name and license, order is irrelevant, e.g., *model_name; Hub License: cc-by-sa-4.0*
+*Duplicates with identical precision and commit should be reported.*
+
+**Q: What is model flagging?**
+
+A: Flagging helps report models that have unfair performance on the leaderboard. For example,   models that were trained on the evaluation data, models that are copies of other models not attributed properly, etc. 
+
+*If your model is flagged incorrectly, you can open a discussion here (*[https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions)*) and defend your case.*
+
+
+## Searching for a model
+
+**Q: How do I search for models in the leaderboard?**
+
+A: Search by:
+
+- **Single Name**: `model_name`
+- **Multiple Names**: Separate names with `;`, e.g., `model_name1;model_name2`
+- **License**: Prefix with `Hub License:`, e.g., `Hub License: MIT`
+- **Combination**: Any order of name and license, e.g., `model_name; Hub License: cc-by-sa-4.0`.
+
 
 ## Editing submissions
 
-I upgraded my model and want to re-submit, how can I do that?
-- *Please open an issue with the precise name of your model, and we'll remove your model from the leaderboard so you can resubmit. You can also resubmit directly with the new commit hash!* 
-I need to rename my model, how can I do that?
-- *You can use @Weyaxi 's [super cool tool](https://huggingface.co/spaces/Weyaxi/open-llm-leaderboard-renamer) to request model name changes, then open a discussion where you link to the created pull request, and we'll check them and merge them as needed.*
+**Q: How can I update or rename my submitted model?**
 
-## Other
+A: To update, open an issue with your model's exact name for removal from the leaderboard before resubmitting with the new commit hash. For renaming, check [community resources](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions/174) page and use @Weyaxi's tool to request changes, then link the pull request in a discussion for approval.
 
-Why do you differentiate between pretrained, continuously pretrained, fine-tuned, merges, etc?
-- *These different models do not play in the same categories, and therefore need to be separated for fair comparison. Base pretrained models are the most interesting for the community, as they are usually good models to fine-tune later on - any jump in performance from a pretrained model represents a true improvement on the SOTA. 
-Fine-tuned and IFT/RLHF/chat models usually have better performance, but the latter might be more sensitive to system prompts, which we do not cover at the moment in the Open LLM Leaderboard. 
-Merges and moerges have artificially inflated performance on test sets, which is not always explainable, and does not always apply to real-world situations.*
+## Additional information
 
-What should I use the leaderboard for?
-- *We recommend using the leaderboard for 3 use cases: 1) getting an idea of the state of open pretrained models, by looking only at the ranks and score of this category; 2) experimenting with different fine-tuning methods, datasets, quantization techniques, etc, and comparing their score in a reproducible setup, and 3) checking the performance of a model of interest to you, wrt to other models of its category.*
+**Q: What does “Show only maintainer's choice” button do?**
 
-Why don't you display closed-source model scores? 
-- *This is a leaderboard for Open models, both for philosophical reasons (openness is cool) and for practical reasons: we want to ensure that the results we display are accurate and reproducible, but 1) commercial closed models can change their API thus rendering any scoring at a given time incorrect 2) we re-run everything on our cluster to ensure all models are run on the same setup and you can't do that for these models.*
+A: This button in the 'Hide models' section filters and displays models from a curated list of trusted and high-quality model providers. We have introduced it to help users easily identify and choose top-tier models. The current set of trusted authors includes well-known names such as EleutherAI, CohereForAI, MistralAI and many others.
 
-I have an issue with accessing the leaderboard through the Gradio API
-- *Since this is not the recommended way to access the leaderboard, we won't provide support for this, but you can look at tools provided by the community for inspiration!*
+**Q: How can I view raw scores for each evaluation?**
 
-I have another problem, help!
-- *Please open an issue in the discussion tab, and we'll do our best to help you in a timely manner :)*
+A: The Leaderboard displays normalized scores by default to provide a fair comparison. Normalization adjusts scores so that the lower bound corresponds to the score of a random baseline, ensuring a fairer average. To view the non-normalized values, use the "Raw" buttons in the "Select Column to Display" section.
+
+**Q: How are model categories differentiated?**
+
+A: Categories are defined to reflect the specific training stages and methodologies applied to each model, ensuring comparisons are both fair and meaningful. Here's a breakdown of each category:
+
+- **Pretrained Models:** These foundational models are initially trained on large datasets without task-specific tuning, serving as a versatile base for further development.
+- **Continuously Pretrained Models:** These undergo additional training beyond initial pretraining to enhance their capabilities, often using more specialized data.
+- **Fine-Tuned Models:** Specifically adjusted on targeted datasets, these models are optimized for particular tasks, improving performance in those areas.
+- **IFT/RLHF/Chat Models:** Tailored for interactive applications like chatbots, these models are trained with methods such as Instruction Fine Tuning or Reinforcement Learning from Human Feedback to handle conversational contexts effectively.
+- **Merges and Moerges:** Combining multiple models or methods, these can show superior test results but do not always apply for real-world situations.
+
+**Q: What are the leaderboard's intended uses?**
+
+A: The leaderboard is ideal for:
+
+1. Viewing rankings and scores of open pretrained models.
+2. Experimenting with various fine-tuning and quantization techniques.
+3. Comparing the performance of specific models within their categories.
+
+**Q: Why don't you have closed-source models?**
+
+A: The leaderboard focuses on open-source models to ensure transparency, reproducibility, and fairness. Closed-source models can change their APIs unpredictably, making it difficult to guarantee consistent and accurate scoring. Additionally, we rerun all evaluations on our cluster to maintain a uniform testing environment, which isn't possible with closed-source models.
+
+**Q: Issues accessing the leaderboard via the Gradio API?**
+
+A: We do not support access through Gradio API; however, community tools may offer alternatives.
+
+**Q: I have another problem, help!**
+
+A: Please, open an issue in the discussion tab, and we'll do our best to help you in a timely manner :

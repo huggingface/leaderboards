@@ -25,11 +25,11 @@ To get started on your own frontend leaderboard, you will need to edit 2 files:
 
 Once this is done, you need to edit the "fake results" file to fit the format of your tasks: in the sub dictionary `results`, replace task_name1 and metric_name by the correct values you defined in tasks above.
 ```
-    "results": {
-        "task_name1": {
-            "metric_name": 0
-        }
+"results": {
+    "task_name1": {
+        "metric_name": 0
     }
+}
 ```
 
 At this step, you should already have some results displayed in the frontend!

@@ -42,12 +42,6 @@ To reproduce our results, here are the commands you can run, our fork of the El
 - Measure: Strict Accuracy at Instance and Prompt Levels (`inst_level_strict_acc,none` and `prompt_level_strict_acc,none`)
 - Shots: 0-shot for both Instance-Level Strict Accuracy and Prompt-Level Strict Accuracy
 
-**ARC Challenge**:
-
-- Task: "ARC Challenge"
-- Measure: Normalized Accuracy (`acc_norm,none`)
-- Shots: 5-shot
-
 **Big Bench Hard (BBH)**:
 
 - Overview Task: "BBH"

@@ -9,7 +9,7 @@ Around 300,000 community members used and collaborated on it monthly through sub
 - Find state-of-the-art open-source releases as the leaderboard provides reproducible scores separating marketing fluff from actual progress in the field.
 - Evaluate their work, be it pretraining or finetuning, comparing methods in the open and to the best existing models, and earning public recognition.
 
-In June 2026, we archived it, and it was replaced by a newer version, but below, you'll find all relevant information about it!
+In June 2024, we archived it, and it was replaced by a newer version, but below, you'll find all relevant information about it!
 
 ### Tasks
 

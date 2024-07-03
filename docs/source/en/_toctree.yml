@@ -5,7 +5,7 @@
     - local: leaderboards/intro
       title: Introduction to leaderboards
     - local: leaderboards/finding_page
-      title: Finding a leaderboard
+      title: Finding leaderboards
     - local: leaderboards/building_page
       title: Building your leaderboard
     - local: leaderboards/extras

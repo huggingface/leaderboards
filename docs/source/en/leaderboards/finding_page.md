@@ -4,6 +4,21 @@
 
 Since the end of 2023, we have worked with partners with strong evaluation knowledge, to highlight their work as a blog series, called [`Leaderboards on the Hub`](https://huggingface.co/blog?tag=leaderboard).
 
+Among these, here is a shortlist on some LLM-specific leaderboards you could take a look at!
+- Code evaluation:
+    - [BigCode's Models Leaderboard](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)
+    - [BigCode's BigCodeBench](https://huggingface.co/spaces/bigcode/bigcodebench-leaderboard)
+    - [LiveCodeBench](https://huggingface.co/blog/leaderboard-livecodebench)
+    - [Meta's CyberSecEval](https://huggingface.co/spaces/facebook/CyberSecEval)
+- Mathematics abiliites:
+    - [NPHardEval](https://huggingface.co/spaces/NPHardEval/NPHardEval-leaderboard)
+- Safety:
+    - [DecodingTrust's Leaderboard](https://huggingface.co/spaces/AI-Secure/llm-trustworthy-leaderboard)
+    - [HaizeLab's Red Teaming Resistance Benchmark](https://huggingface.co/spaces/HaizeLabs/red-teaming-resistance-benchmark)
+- Performance:
+    - [Optimum's LLM Performance Leaderboard](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)
+    - [Artificial Analysis LLM Performance Leaderboard](https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard)
+
 <!-- Here are the most recent blogs we wrote together: -->
 <!-- """ + return_blog_list(recent_blogs) + """ -->
 

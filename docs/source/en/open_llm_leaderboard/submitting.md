@@ -1,6 +1,6 @@
 # How to submit models on the Open LLM Leaderboard
 
-Models added here will be automatically evaluated on the 🤗 cluster. Don't forget to read the FAQ and the About documentaiton pages for more information!
+Models added here will be automatically evaluated on the 🤗 cluster. Don't forget to read the FAQ and the About documentation pages for more information!
 
 ## First steps before submitting a model
 
@@ -33,14 +33,14 @@ Not all models are converted properly from `float16` to `bfloat16`, and selectin
 
 - **Note:** When submitting, git branches and tags will be strictly tied to the specific commit present at the time of submission. This ensures revision consistency.
 
-### 4. **Chat Template Toggle**:
+### 4. Chat Template Toggle:
 
 When submitting a model, you can choose whether to evaluate it using a chat template. The chat template toggle activates automatically for chat models.
 
 ### Model Types
 
 - 🟢 **Pretrained Model:** New, base models trained on a given text corpora using masked modeling.
-- 🟩 **Continuously Pretrained Model:** New, base models continuously trained on further corpus (which may include IFT/chat data) using masked modeling.
+- 🟩 **Continuously Pretrained Model:** New, base models continuously trained on further corpora (which may include IFT/chat data) using masked modeling.
 - 🔶 **Fine-Tuned on Domain-Specific Datasets Model:** Pretrained models fine-tuned on more data.
 - 💬 **Chat Models (RLHF, DPO, IFT, ...):** Chat-like fine-tunes using IFT (datasets of task instruction), RLHF, DPO (changing the model loss with an added policy), etc.
 - 🤝 **Base Merges and Moerges Model:** Merges or MoErges, models which have been merged or fused without additional fine-tuning.

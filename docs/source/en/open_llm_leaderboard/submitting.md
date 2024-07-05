@@ -33,6 +33,23 @@ Not all models are converted properly from `float16` to `bfloat16`, and selectin
 
 - **Note:** When submitting, git branches and tags will be strictly tied to the specific commit present at the time of submission. This ensures revision consistency.
 
+#### Model Size and Precision Limits:
+Our submission system implements a two-tier check to determine if a model can be automatically evaluated:
+
+1. **Absolute Size Limit for High-Precision Models:**
+   - Applies to: `float16` and `bfloat16` precisions
+   - Limit: 100 billion parameters
+
+2. **Precision-Adjusted Size Limit:**
+   - Maximum base size: 140 billion parameters
+   - Adjusted by precision factors:
+     - `float16`, `bfloat16`: 1x (max 140B)
+     - `8bit`: 2x (max 280B)
+     - `4bit`: 4x (max 560B)
+     - `GPTQ`: Varies based on quantization bits
+
+Models exceeding these limits cannot be automatically evaluated. Consider using a lower precision for larger models.
+
 ### 4. Chat Template Toggle:
 
 When submitting a model, you can choose whether to evaluate it using a chat template. The chat template toggle activates automatically for chat models.

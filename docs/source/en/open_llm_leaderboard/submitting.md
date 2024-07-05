@@ -43,7 +43,6 @@ Our submission system implements a two-tier check to determine if a model can be
 2. **Precision-Adjusted Size Limit:**
    - Maximum base size: 140 billion parameters
    - Adjusted by precision factors:
-     - `float16`, `bfloat16`: 1x (max 140B)
      - `8bit`: 2x (max 280B)
      - `4bit`: 4x (max 560B)
      - `GPTQ`: Varies based on quantization bits

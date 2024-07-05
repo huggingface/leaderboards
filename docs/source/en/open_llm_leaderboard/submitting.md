@@ -47,7 +47,7 @@ Our submission system implements a two-tier check to determine if a model can be
      - `4bit`: 4x (max 560B)
      - `GPTQ`: Varies based on quantization bits
 
-Models exceeding these limits cannot be automatically evaluated. Consider using a lower precision for larger models.
+Models exceeding these limits cannot be automatically evaluated. Consider using a lower precision for larger models / open a discussion on Open LLM Leaderboard. If there's enough interest from the community, we'll do a manual evaluation
 
 ### 4. Chat Template Toggle:
 

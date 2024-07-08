@@ -41,61 +41,65 @@ To reproduce our results, you can use [lm_eval](https://github.com/eleutherai/lm
 - Task: "IFEval"
 - Measure: Strict Accuracy at Instance and Prompt Levels (`inst_level_strict_acc,none` and `prompt_level_strict_acc,none`)
 - Shots: 0-shot for both Instance-Level Strict Accuracy and Prompt-Level Strict Accuracy
-
+- num_choices: 0 for both Strict Accuracy at Instance and Prompt Levels.
+  
 **Big Bench Hard (BBH)**:
 
 - Overview Task: "BBH"
 - Shots: 3-shot for each subtask
 - Measure: Normalized Accuracy across all subtasks (`acc_norm,none`)
-- List of subtasks
-    - BBH Sports Understanding
-    - BBH Tracking Shuffled Objects (Three Objects)
-    - BBH Navigate
-    - BBH Snarks
-    - BBH Date Understanding
-    - BBH Reasoning about Colored Objects
-    - BBH Object Counting
-    - BBH Logical Deduction (Seven Objects)
-    - BBH Geometric Shapes
-    - BBH Web of Lies
-    - BBH Movie Recommendation
-    - BBH Logical Deduction (Five Objects)
-    - BBH Salient Translation Error Detection
-    - BBH Disambiguation QA
-    - BBH Temporal Sequences
-    - BBH Hyperbaton
-    - BBH Logical Deduction (Three Objects)
-    - BBH Causal Judgement
-    - BBH Formal Fallacies
-    - BBH Tracking Shuffled Objects (Seven Objects)
-    - BBH Ruin Names
-    - BBH Penguins in a Table
-    - BBH Boolean Expressions
-    - BBH Tracking Shuffled Objects (Five Objects)
+- List of subtasks with num_choices:
+    - BBH Sports Understanding, num_choices=2
+    - BBH Tracking Shuffled Objects (Three Objects), num_choices=3
+    - BBH Navigate, num_choices=2
+    - BBH Snarks, num_choices=2
+    - BBH Date Understanding, num_choices=6
+    - BBH Reasoning about Colored Objects, num_choices=18
+    - BBH Object Counting, num_choices=19 (should be 18 but we added a "0" choice)
+    - BBH Logical Deduction (Seven Objects), num_choices=7
+    - BBH Geometric Shapes, num_choices=11
+    - BBH Web of Lies, num_choices=2
+    - BBH Movie Recommendation, num_choices=6
+    - BBH Logical Deduction (Five Objects), num_choices=5
+    - BBH Salient Translation Error Detection, num_choices=6
+    - BBH Disambiguation QA, num_choices=3
+    - BBH Temporal Sequences, num_choices=4
+    - BBH Hyperbaton, num_choices=2
+    - BBH Logical Deduction (Three Objects), num_choices=3
+    - BBH Causal Judgement, num_choices=2
+    - BBH Formal Fallacies, num_choices=2
+    - BBH Tracking Shuffled Objects (Seven Objects), num_choices=7
+    - BBH Ruin Names, num_choices=6
+    - BBH Penguins in a Table, num_choices=5
+    - BBH Boolean Expressions, num_choices=2
+    - BBH Tracking Shuffled Objects (Five Objects), num_choices=5
 
 **Math Challenges**:
 
 - Task: "Math Level 5"
 - Measure: Exact Match (`exact_match,none`)
 - Shots: 4-shot
+- num_choices: 0
 
 **Generalized Purpose Question Answering (GPQA)**:
 
 - Task: "GPQA"
 - Measure: Normalized Accuracy (`acc_norm,none`)
 - Shots: 0-shot
+- num_choices: 4
 
 **MuSR**:
 
 - Overview Task: "MuSR"
 - Measure: Normalized Accuracy across all subtasks (`acc_norm,none`)
-- MuSR Murder Mysteries: 0-shot
-- MuSR Object Placement: 0-shot
-- MuSR Team Allocation: 0-shot
+- MuSR Murder Mysteries: 0-shot, num_choices: 2
+- MuSR Object Placement: 0-shot, num_choices: 5
+- MuSR Team Allocation: 0-shot, num_choices: 3
 
 **MMLU-PRO**:
 
 - Task: "MMLU-PRO"
 - Measure: Accuracy (`acc,none`)
 - Shots: 5-shot
+- num_choices: 10
 

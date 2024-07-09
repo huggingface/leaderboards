@@ -29,8 +29,15 @@ If a model's name contains "Flagged", this indicates it has been flagged by the 
 
 ## Reproducibility
 
-To reproduce our results, you can use [lm_eval](https://github.com/eleutherai/lm-evaluation-harness/) by installing it from main: 
-`lm-eval --model hf --model_args="pretrained=<your_model>,revision=<your_model_revision>,dtype=<model_dtype>" --tasks=leaderboard  --batch_size=auto --output_path=<output_path>`
+To reproduce our results, you can use [lm_eval](https://github.com/eleutherai/lm-evaluation-harness/) by installing it from main and then checkout out the `chat_template_fix` PR (to be merged soon).
+
+```
+git clone git@github.com:EleutherAI/lm-evaluation-harness.git
+cd lm-evaluation-harness
+git checkout chat_template_fix
+git merge main
+lm-eval --model_args="pretrained=<your_model>,revision=<your_model_revision>,dtype=<model_dtype>" --tasks=leaderboard  --batch_size=auto --output_path=<output_path>
+```
 
 **Note:** You can expect results to vary slightly for different batch sizes because of padding.
 

@@ -34,6 +34,8 @@ To reproduce our results, you can use [lm_eval](https://github.com/eleutherai/lm
 ```
 git clone git@github.com:EleutherAI/lm-evaluation-harness.git
 cd lm-evaluation-harness
+git remote add hf https://github.com/huggingface/lm-evaluation-harness
+git fetch hf
 git checkout chat_template_fix
 git merge main
 lm-eval --model_args="pretrained=<your_model>,revision=<your_model_revision>,dtype=<model_dtype>" --tasks=leaderboard  --batch_size=auto --output_path=<output_path>

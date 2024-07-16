@@ -47,7 +47,7 @@ print(f"Normalized GPQA score: {normalized_score:.2f}")
 ```
 
 ## Normalizing Tasks with Subtasks
-For tasks with subtasks (e.g., MUSR), we follow these steps:
+For tasks with subtasks (e.g., MUSR, BBH), we follow these steps:
 - Calculate the lower bound for each subtask.
 - Normalize each subtask score.
 - Average the normalized subtask scores.
@@ -92,8 +92,8 @@ print(f"Overall normalized MUSR score: {overall_normalized_score:.2f}")
 # Overall normalized MUSR score: 35.00
 ```
 
-## Generative Evaluations (MATH, IFEval, BBH)
-Generative evaluations like MATH, IFEval, and BBH require a different approach:
+## Generative Evaluations
+Generative evaluations like MATH and IFEval require a different approach:
 1. **MATH:** Uses exact match accuracy. The lower bound is effectively 0, as random guessing is unlikely to produce a correct answer.
 2. IFEval:
     - For instance-level evaluation (`ifeval_inst`), we use strict accuracy.

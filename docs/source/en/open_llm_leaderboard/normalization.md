@@ -95,7 +95,7 @@ print(f"Overall normalized MUSR score: {overall_normalized_score:.2f}")
 ## Generative Evaluations
 Generative evaluations like MATH and IFEval require a different approach:
 1. **MATH:** Uses exact match accuracy. The lower bound is effectively 0, as random guessing is unlikely to produce a correct answer.
-2. IFEval:
+2. **IFEval:**
     - For instance-level evaluation (`ifeval_inst`), we use strict accuracy.
     - For prompt-level evaluation (`ifeval_prompt`), we also use strict accuracy.
     - The lower bound for both is 0, as random generation is unlikely to produce correct answers.

@@ -2,6 +2,10 @@
 
 ## Submissions
 
+**Q: Do you keep track of who submits models?** 
+
+A: Yes, we store information about which user submitted each model in the requests files here. This helps us prevent spam and encourages responsible submissions. Users are accountable for their submissions, as the community can identify who submitted each model.
+
 **Q: Can I submit a model that requires `trust_remote_code=True`?**
 
 A: We only accept models that have been integrated into a stable version of the `transformers` library to ensure the safety and stability of code executed on our cluster.

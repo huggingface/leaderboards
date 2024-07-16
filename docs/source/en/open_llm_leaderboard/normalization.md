@@ -30,7 +30,7 @@ For tasks without subtasks (e.g., GPQA, MMLU-PRO), the normalization process is 
 - Scale to a percentage.
 
 ### Example: Normalizing GPQA Scores
-GPQA has 4 `num_choices`, so the lower bound is 0.25.
+GPQA has 4 `num_choices`, so the lower bound is 0.25 (1/`num_choices` = 1/4 = 0.25).
 
 ```python
 raw_score = 0.6  # Example raw score

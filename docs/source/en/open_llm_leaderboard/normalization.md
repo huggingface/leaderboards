@@ -100,22 +100,6 @@ Generative evaluations like MATH and IFEval require a different approach:
 
 For these tasks, the normalization process in the code is as follows:
 
-```python
-for subtask in subtasks:
-    subtask_val = subtask.value
-    value = data["results"][subtask_val.benchmark][subtask_val.metric]
-    higher_bound = 1
-    lower_bound = higher_bound / subtask_val.num_choices if subtask_val.num_choices > 0 else 0
-    if value < lower_bound:
-        normalized_score = 0
-    else:
-        normalized_score = normalize_within_range(
-            value=value, 
-            lower_bound=lower_bound,
-            higher_bound=higher_bound
-        )
-    normalized_scores.append(normalized_score * 100)
-```
 This approach ensures that even for generative tasks, we can provide normalized scores that are comparable across different evaluations.
 
 ## Further Information

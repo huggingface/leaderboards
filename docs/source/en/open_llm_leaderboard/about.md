@@ -58,33 +58,30 @@ lm-eval --model_args="pretrained=<your_model>,revision=<your_model_revision>,dty
 - Shots: 3-shot for each subtask
 - Measure: Normalized Accuracy across all subtasks (`acc_norm,none`)
 - List of subtasks with `num_choices`:
-| BBH Task                                      | num_choices |
-|-----------------------------------------------|-------------|
-| BBH Sports Understanding                      | 2           |
-| BBH Tracking Shuffled Objects (Three Objects) | 3           |
-| BBH Navigate                                  | 2           |
-| BBH Snarks                                    | 2           |
-| BBH Date Understanding                        | 6           |
-| BBH Reasoning about Colored Objects           | 18          |
-| BBH Object Counting                           | 19          |
-| BBH Logical Deduction (Seven Objects)         | 7           |
-| BBH Geometric Shapes                          | 11          |
-| BBH Web of Lies                               | 2           |
-| BBH Movie Recommendation                      | 6           |
-| BBH Logical Deduction (Five Objects)          | 5           |
-| BBH Salient Translation Error Detection       | 6           |
-| BBH Disambiguation QA                         | 3           |
-| BBH Temporal Sequences                        | 4           |
-| BBH Hyperbaton                                | 2           |
-| BBH Logical Deduction (Three Objects)         | 3           |
-| BBH Causal Judgement                          | 2           |
-| BBH Formal Fallacies                          | 2           |
-| BBH Tracking Shuffled Objects (Seven Objects) | 7           |
-| BBH Ruin Names                                | 6           |
-| BBH Penguins in a Table                       | 5           |
-| BBH Boolean Expressions                       | 2           |
-| BBH Tracking Shuffled Objects (Five Objects)  | 5           |
-
+    - BBH Sports Understanding, num_choices=2
+    - BBH Tracking Shuffled Objects (Three Objects), num_choices=3
+    - BBH Navigate, num_choices=2
+    - BBH Snarks, num_choices=2
+    - BBH Date Understanding, num_choices=6
+    - BBH Reasoning about Colored Objects, num_choices=18
+    - BBH Object Counting, num_choices=19 (should be 18 but we added a “0” choice)
+    - BBH Logical Deduction (Seven Objects), num_choices=7
+    - BBH Geometric Shapes, num_choices=11
+    - BBH Web of Lies, num_choices=2
+    - BBH Movie Recommendation, num_choices=6
+    - BBH Logical Deduction (Five Objects), num_choices=5
+    - BBH Salient Translation Error Detection, num_choices=6
+    - BBH Disambiguation QA, num_choices=3
+    - BBH Temporal Sequences, num_choices=4
+    - BBH Hyperbaton, num_choices=2
+    - BBH Logical Deduction (Three Objects), num_choices=3
+    - BBH Causal Judgement, num_choices=2
+    - BBH Formal Fallacies, num_choices=2
+    - BBH Tracking Shuffled Objects (Seven Objects), num_choices=7
+    - BBH Ruin Names, num_choices=6
+    - BBH Penguins in a Table, num_choices=5
+    - BBH Boolean Expressions, num_choices=2
+    - BBH Tracking Shuffled Objects (Five Objects), num_choices=5
 
 **Math Challenges**:
 

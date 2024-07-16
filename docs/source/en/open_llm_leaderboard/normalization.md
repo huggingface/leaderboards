@@ -55,11 +55,9 @@ For tasks with subtasks (e.g., MUSR, BBH), we follow these steps:
 ### Example: Normalizing MUSR Scores
 
 MUSR has three subtasks with different numbers of choices:
-| Subtask               | Choices | Lower Bound |
-|-----------------------|---------|-------------|
-| MUSR murder mysteries | 2       | 0.5         |
-| MUSR object placement | 5       | 0.2         |
-| MUSR team allocation  | 3       | 0.333       |
+- MUSR murder mysteries, num_choices = 2, lower_bound = 0.5
+- MUSR object placement, num_choices = 5, lower_bound = 0.2
+- MUSR team allocation, num_choices = 3, lower_bound = 0.33
 
 ```python
 subtasks = [

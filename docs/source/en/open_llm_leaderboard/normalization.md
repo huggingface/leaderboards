@@ -98,8 +98,6 @@ Generative evaluations like MATH and IFEval require a different approach:
     - For prompt-level evaluation (`ifeval_prompt`), we also use strict accuracy.
     - The lower bound for both is 0, as random generation is unlikely to produce correct answers.
 
-For these tasks, the normalization process in the code is as follows:
-
 This approach ensures that even for generative tasks, we can provide normalized scores that are comparable across different evaluations.
 
 ## Further Information

@@ -29,7 +29,7 @@ If a model's name contains "Flagged", this indicates it has been flagged by the 
 
 ## Reproducibility
 
-To reproduce our results, you can use our fork of [lm_eval](https://github.com/eleutherai/lm-evaluation-harness/), as our PRs are not all merged in it at the moment.
+To reproduce our results, you can use our fork of [lm_eval](https://github.com/huggingface/lm-evaluation-harness/tree/adding_all_changess), as our PRs are not all merged in it at the moment.
 ```
 git clone git@github.com:huggingface/lm-evaluation-harness.git
 cd lm-evaluation-harness

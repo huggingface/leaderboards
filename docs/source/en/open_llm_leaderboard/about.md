@@ -37,7 +37,7 @@ git checkout adding_all_changess
 pip install -e .[math,ifeval,sentencepiece]
 lm-eval --model_args="pretrained=<your_model>,revision=<your_model_revision>,dtype=<model_dtype>" --tasks=leaderboard  --batch_size=auto --output_path=<output_path>
 ```
-**Attention:** For instruction models add the `--apply_chat_template` option.
+**Attention:** For instruction models add the `--apply_chat_template` and `fewshot_as_multiturn` option.
 
 **Note:** You can expect results to vary slightly for different batch sizes because of padding.
 

@@ -20,5 +20,7 @@
       title: FAQ
     - local: open_llm_leaderboard/normalization
       title: Scores Normalization
+    - local: open_llm_leaderboard/emissions
+      title: C02 calculation
     - local: open_llm_leaderboard/archive
       title: Archived versions

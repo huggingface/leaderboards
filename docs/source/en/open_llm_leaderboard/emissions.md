@@ -1,4 +1,4 @@
-# Emissions Calculation
+# C02 calculation
 
 ## Function for C02 calculation
 
@@ -37,7 +37,7 @@ Here’s how it works:
 1. If `total_evaluation_time_seconds` is `None` or non-positive, the function returns `-1`, indicating invalid input.
    > Each result file have a `total_evaluation_time_seconds` field.
 
-2. Assumes 8 NVIDIA H100 SXM GPUs with a combined power usage of 5.6 kilowatts (kW), based on each GPU’s maximum 0.7 kW consumption ([source](https://www.techpowerup.com/gpu-specs/h100-sxm5-80-gb.c3900)).
+2. Assumes 8 NVIDIA H100 SXM GPUs with a combined power usage of 5.6 kilowatts (kW), based on each GPU’s maximum 0.7 kW consumption ([source](https://resources.nvidia.com/en-us-tensor-core/nvidia-tensor-core-gpu-datasheet)).
 
 3. Uses an average of 269.8 grams of CO₂ per kilowatt-hour (g CO₂/kWh) for electricity in Virginia, based on U.S. Energy Information Administration data ([source](https://www.eia.gov/electricity/state/virginia/)).
 

@@ -46,3 +46,11 @@ Here’s how it works:
 5. Calculates emissions in grams by multiplying energy use (kWh) by the carbon intensity.
 
 6. Finally, divides the total grams by 1,000 to convert to kilograms.
+
+
+## CO₂ data analysis
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gaXUywH9fB5rINM8Ocg_U26u5voDmLUi?usp=sharing)
+
+ This Jupyter notebook provides a comprehensive investigation of CO₂ emissions during the evaluation process. 
+
+> Note: Feel free to copy it and explore the findings yourself.

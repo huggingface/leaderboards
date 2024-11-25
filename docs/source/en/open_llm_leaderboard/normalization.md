@@ -4,7 +4,7 @@ This page explains how scores are normalized on the Open LLM Leaderboard for the
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-aPrFJjwdifhVLxzJcsYXeebqNi_5vaw?usp=sharing)
 
-**Note:** Click the button above to explore the scores normalization process in an interactive notebook (make a copy to edit).
+> Note: Click the button above to explore the scores normalization process in an interactive notebook (make a copy to edit).
 
 ## What is Normalization?
 Normalization is the process of adjusting values measured on different scales to a common scale, making it possible to compare scores across different tasks. For the Open LLM Leaderboard, we normalize scores to:

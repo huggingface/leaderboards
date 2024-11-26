@@ -29,12 +29,12 @@ If a model's name contains "Flagged", this indicates it has been flagged by the 
 
 ## Reproducibility
 
-To reproduce our results, you can use our fork of [lm_eval](https://github.com/huggingface/lm-evaluation-harness/tree/adding_all_changess), as our PRs are not all merged in it at the moment.
+To reproduce our results, you can use our fork of [lm_eval](https://github.com/huggingface/lm-evaluation-harness/tree/main), as our PRs are not all merged in it at the moment.
 ```
 git clone git@github.com:huggingface/lm-evaluation-harness.git
 cd lm-evaluation-harness
-git checkout adding_all_changess
-pip install -e .[math,ifeval,sentencepiece]
+git checkout main
+pip install -e .
 lm-eval --model_args="pretrained=<your_model>,revision=<your_model_revision>,dtype=<model_dtype>" --tasks=leaderboard  --batch_size=auto --output_path=<output_path>
 ```
 **Attention:** For instruction models add the `--apply_chat_template` and `fewshot_as_multiturn` option.

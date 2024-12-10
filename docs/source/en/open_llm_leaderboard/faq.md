@@ -64,13 +64,38 @@ A: Flagging helps report models that have unfair performance on the leaderboard.
 
 **Q: How do I search for models in the leaderboard?**
 
-A: Search by:
+A: The search bar provides powerful filtering capabilities with several advanced features:
 
-- **Single Name**: `model_name`
-- **Multiple Names**: Separate names with `;`, e.g., `model_name1;model_name2`
-- **License**: Prefix with `Hub License:`, e.g., `Hub License: MIT`
-- **Combination**: Any order of name and license, e.g., `model_name; Hub License: cc-by-sa-4.0`.
+**Multiple Term Search**
+- Combine Searches: Use semicolons (;) to combine multiple independent search terms.
+- Stacked Results: Each term after the semicolon adds results to the previous search, creating a union of results rather than filtering by intersection.
 
+Example: `llama; 7b` will find models containing "llama" OR models containing "7b."
+
+**Special Field Search**
+Use the @ prefix to target specific fields:
+- @architecture: - Search by model architecture.
+- @license: - Filter by license type.
+- @precision: - Filter by model precision.
+
+Example: @architecture:llama @license:apache will find Llama models with an Apache license.
+
+**Regex Support**
+- Advanced Pattern Matching: Supports regular expressions for flexible search criteria.
+- Automatic Detection: Regex mode is activated automatically when special regex characters are used.
+
+Example: `llama-2-(7|13|70)b` matches `llama-2-7b`, `llama-2-13b`, and `llama-2-70b`.
+
+**Combined Search**
+- Combine and stack all features for precise results:
+
+Example: `meta @architecture:llama; 7b @license:apache` will find:
+- Models containing "meta" AND having the Llama architecture, OR
+- odels containing "7b" AND having an Apache license.
+
+**Real-Time Results**
+- Dynamic Updates: The search is performed in real-time with debouncing for smooth performance.
+- Highlighting: Results are visually emphasized in the table for easy identification.
 
 ## Editing submissions
 
@@ -80,13 +105,14 @@ A: To update, open an issue with your model's exact name for removal from the le
 
 ## Additional information
 
-**Q: What does “Show only maintainer's choice” button do?**
+**Q: What does “Only Official Providers” button do?**
 
-A: This button in the 'Hide models' section filters and displays models from a curated list of trusted and high-quality model providers. We have introduced it to help users easily identify and choose top-tier models. The current set of trusted authors includes well-known names such as EleutherAI, CohereForAI, MistralAI and many others.
+A: This button filters and displays models from a curated list of trusted and high-quality model providers. We have introduced it to help users easily identify and choose top-tier models. The current set of trusted authors includes well-known names such as EleutherAI, CohereForAI, MistralAI and many others.
+The dataset is available [here](https://huggingface.co/datasets/open-llm-leaderboard/official-providers).
 
 **Q: How can I view raw scores for each evaluation?**
 
-A: The Leaderboard displays normalized scores by default to provide a fair comparison. Normalization adjusts scores so that the lower bound corresponds to the score of a random baseline, ensuring a fairer average. To view the non-normalized values, use the "Raw" buttons in the "Select Column to Display" section.
+A: The Leaderboard displays normalized scores by default to provide a fair comparison. Normalization adjusts scores so that the lower bound corresponds to the score of a random baseline, ensuring a fairer average. To view the non-normalized values, go to "table options", "Score Display", and click "Raw".
 
 **Q: How are model categories differentiated?**
 
@@ -95,8 +121,8 @@ A: Categories are defined to reflect the specific training stages and methodolog
 - **Pretrained Models:** These foundational models are initially trained on large datasets without task-specific tuning, serving as a versatile base for further development.
 - **Continuously Pretrained Models:** These undergo additional training beyond initial pretraining to enhance their capabilities, often using more specialized data.
 - **Fine-Tuned Models:** Specifically adjusted on targeted datasets, these models are optimized for particular tasks, improving performance in those areas.
-- **IFT/RLHF/Chat Models:** Tailored for interactive applications like chatbots, these models are trained with methods such as Instruction Fine Tuning or Reinforcement Learning from Human Feedback to handle conversational contexts effectively.
-- **Merges and Moerges:** Combining multiple models or methods, these can show superior test results but do not always apply for real-world situations.
+- **Chat Models:** Tailored for interactive applications like chatbots, these models are trained with methods such as Instruction Fine Tuning or Reinforcement Learning from Human Feedback to handle conversational contexts effectively.
+- **Merge Models:** Combining multiple models or methods, these can show superior test results but do not always apply for real-world situations.
 
 **Q: What are the leaderboard's intended uses?**
 

@@ -49,7 +49,7 @@ A: For each model, you can access:
 
 **Q: Why do some models appear multiple times in the leaderboard?**
 
-A: Models may appear multiple times due to submissions under different commits or precision settings, like float16 and 4bit. You can check this by clicking on the `Model sha` and `Precision` buttons under “Select Columns to Display” section on the main page. For evaluation, precision helps to assess the impact of quantization. 
+A: Models may appear multiple times due to submissions under different commits or precision settings, like `float16` and `4bit`. You can check this by clicking on the `Precision` button under “column visibility” section on the main page. For evaluation, precision helps to assess the impact of quantization. 
 
 *Duplicates with identical precision and commit should be reported.*
 
@@ -121,7 +121,7 @@ A: Categories are defined to reflect the specific training stages and methodolog
 - **Pretrained Models:** These foundational models are initially trained on large datasets without task-specific tuning, serving as a versatile base for further development.
 - **Continuously Pretrained Models:** These undergo additional training beyond initial pretraining to enhance their capabilities, often using more specialized data.
 - **Fine-Tuned Models:** Specifically adjusted on targeted datasets, these models are optimized for particular tasks, improving performance in those areas.
-- **Chat Models:** Tailored for interactive applications like chatbots, these models are trained with methods such as Instruction Fine Tuning or Reinforcement Learning from Human Feedback to handle conversational contexts effectively.
+- **Chat Models:** Tailored for interactive applications like chatbots, these models are trained to handle conversational contexts effectively.
 - **Merge Models:** Combining multiple models or methods, these can show superior test results but do not always apply for real-world situations.
 
 **Q: What are the leaderboard's intended uses?**

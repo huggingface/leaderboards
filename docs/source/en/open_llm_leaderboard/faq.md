@@ -44,8 +44,8 @@ A: Please create an issue in the [Community section]([https://huggingface.co/spa
 A: For each model, you can access:
 
 - **Request File**: Status of the evaluation.
-- **Contents Dataset:** A full dataset that contains information about all evaluated models.
-- **Details Dataset**: Comprehensive breakdown of scores and task examples.
+- **Contents Dataset:** A full dataset that contains information about all evaluated models. It's available [here](https://huggingface.co/datasets/open-llm-leaderboard/contents).
+- **Details Dataset**: Comprehensive breakdown of scores and task examples. You can see all the Details datasets [here](https://huggingface.co/open-llm-leaderboard).
 
 **Q: Why do some models appear multiple times in the leaderboard?**
 

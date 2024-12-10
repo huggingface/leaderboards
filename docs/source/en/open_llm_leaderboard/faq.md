@@ -136,10 +136,6 @@ A: The leaderboard is ideal for:
 
 A: The leaderboard focuses on open-source models to ensure transparency, reproducibility, and fairness. Closed-source models can change their APIs unpredictably, making it difficult to guarantee consistent and accurate scoring. Additionally, we rerun all evaluations on our cluster to maintain a uniform testing environment, which isn't possible with closed-source models.
 
-**Q: Issues accessing the leaderboard via the Gradio API?**
-
-A: We do not support access through Gradio API; however, community tools may offer alternatives.
-
 **Q: I have another problem, help!**
 
 A: Please, open an issue in the discussion tab, and we'll do our best to help you in a timely manner :

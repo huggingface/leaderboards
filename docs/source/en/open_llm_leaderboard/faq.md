@@ -73,12 +73,13 @@ A: The search bar provides powerful filtering capabilities with several advanced
 Example: `llama; 7b` will find models containing "llama" OR models containing "7b."
 
 **Special Field Search**
-Use the @ prefix to target specific fields:
-- @architecture: - Search by model architecture.
-- @license: - Filter by license type.
-- @precision: - Filter by model precision.
 
-Example: @architecture:llama @license:apache will find Llama models with an Apache license.
+Use the `@` prefix to target specific fields:
+- `@architecture:` - Search by model architecture.
+- `@license:` - Filter by license type.
+- `@precision:` - Filter by model precision.
+
+Example: `@architecture:llama @license:apache` will find Llama models with an Apache license.
 
 **Regex Support**
 - Advanced Pattern Matching: Supports regular expressions for flexible search criteria.

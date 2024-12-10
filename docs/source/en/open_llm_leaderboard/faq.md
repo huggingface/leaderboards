@@ -92,7 +92,7 @@ Example: `llama-2-(7|13|70)b` matches `llama-2-7b`, `llama-2-13b`, and `llama-2-
 
 Example: `meta @architecture:llama; 7b @license:apache` will find:
 - Models containing "meta" AND having the Llama architecture, OR
-- odels containing "7b" AND having an Apache license.
+- Models containing "7b" AND having an Apache license.
 
 **Real-Time Results**
 - Dynamic Updates: The search is performed in real-time with debouncing for smooth performance.

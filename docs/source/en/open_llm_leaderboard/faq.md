@@ -20,11 +20,11 @@ A: Sure! When submitting a model, you can choose whether to evaluate it using a 
 
 **Q: How can I track the status of my model submission?**
 
-A: You can monitor your model's status by checking the request file here ([https://huggingface.co/datasets/open-llm-leaderboard/requests](https://huggingface.co/datasets/open-llm-leaderboard/requests)) or viewing the queues above the submit form.
+A: You can monitor your model's status by checking the [Request file here](https://huggingface.co/datasets/open-llm-leaderboard/requests) or viewing the queues above the submit form.
 
 **Q: What happens if my model disappears from all queues?**
 
-A: A model’s disappearance typically indicates a failure. You can find your model in requests dataset here ([https://huggingface.co/datasets/open-llm-leaderboard/requests](https://huggingface.co/datasets/open-llm-leaderboard/requests)) and check its status.
+A: A model’s disappearance typically indicates a failure. You can find your model in [Requests dataset here](https://huggingface.co/datasets/open-llm-leaderboard/requests) and check its status.
 
 **Q: What causes an evaluation failure?**
 
@@ -32,7 +32,7 @@ A: Failures often stem from submission issues such as corrupted files or configu
 
 **Q: How do I report an evaluation failure?**
 
-A: Please create an issue in the Community section ([https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions)), linking your model’s request file for further investigation. If the error is on our side, we will relaunch your model promptly.
+A: Please create an issue in the [Community section]([https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions), linking your model’s request file for further investigation. If the error is on our side, we will relaunch your model promptly.
 
 *Do not re-upload your model under a different name as it will not resolve the issue.*
 
@@ -57,7 +57,7 @@ A: Models may appear multiple times due to submissions under different commits o
 
 A: Flagging helps report models that have unfair performance on the leaderboard. For example,   models that were trained on the evaluation data, models that are copies of other models not attributed properly, etc. 
 
-*If your model is flagged incorrectly, you can open a discussion here (*[https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions)*) and defend your case.*
+*If your model is flagged incorrectly, you can open a discussion [here](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/discussions) and defend your case.*
 
 
 ## Searching for a model

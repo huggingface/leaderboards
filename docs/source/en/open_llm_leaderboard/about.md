@@ -17,10 +17,18 @@ We wrote a release blog [here](https://huggingface.co/spaces/open-llm-leaderboar
 
 For all these evaluations, a higher score is a better score. We chose these benchmarks as they test a variety of reasoning and general knowledge across a wide variety of fields in 0-shot and few-shot settings.
 
-### Results
+## Model Types
+
+- 🟢 **Pretrained Model:** New, base models trained on a given text corpora using masked modeling.
+- 🟩 **Continuously Pretrained Model:** New, base models continuously trained on further corpora (which may include IFT/chat data) using masked modeling.
+- 🔶 **Fine-Tuned on Domain-Specific Datasets Model:** Pretrained models fine-tuned on more data.
+- 💬 **Chat Models (RLHF, DPO, IFT, ...):** Chat-like fine-tunes using IFT (datasets of task instruction), RLHF, DPO (changing the model loss with an added policy), etc.
+- 🤝 **Base Merges and Moerges Model:** Merges or MoErges, models which have been merged or fused without additional fine-tuning.
+
+
+## Results
 
 You can find:
-
 - Detailed numerical results in the [`results` Hugging Face dataset](https://huggingface.co/datasets/open-llm-leaderboard/results/).
 - Details on the input/outputs for the models in the `details` of each model, which you can access by clicking the 📄 emoji after the model name.
 - Community queries and running status in the [`requests` Hugging Face dataset](https://huggingface.co/datasets/open-llm-leaderboard/requests).

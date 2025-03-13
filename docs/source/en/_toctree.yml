@@ -14,8 +14,6 @@
   sections:
     - local: open_llm_leaderboard/about
       title: About
-    - local: open_llm_leaderboard/submitting
-      title: How to submit your model
     - local: open_llm_leaderboard/faq
       title: FAQ
     - local: open_llm_leaderboard/normalization

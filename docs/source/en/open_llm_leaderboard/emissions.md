@@ -1,6 +1,6 @@
-# C02 calculation
+# CO2 calculation
 
-## Function for C02 calculation
+## Function for CO2 calculation
 
 To calculate `CO₂ Emissions for Evaluation (kg)` value, we use the following function. You can try to reproduce it yourself:
 

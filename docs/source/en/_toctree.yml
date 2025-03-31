@@ -19,6 +19,6 @@
     - local: open_llm_leaderboard/normalization
       title: Scores Normalization
     - local: open_llm_leaderboard/emissions
-      title: C02 calculation
+      title: CO2 calculation
     - local: open_llm_leaderboard/archive
       title: Archived versions

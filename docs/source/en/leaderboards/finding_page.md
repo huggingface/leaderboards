@@ -10,7 +10,7 @@ Among these, here is a shortlist on some LLM-specific leaderboards you could tak
     - [BigCode's BigCodeBench](https://huggingface.co/spaces/bigcode/bigcodebench-leaderboard)
     - [LiveCodeBench](https://huggingface.co/blog/leaderboard-livecodebench)
     - [Meta's CyberSecEval](https://huggingface.co/spaces/facebook/CyberSecEval)
-- Mathematics abiliites:
+- Mathematics abilities:
     - [NPHardEval](https://huggingface.co/spaces/NPHardEval/NPHardEval-leaderboard)
 - Safety:
     - [DecodingTrust's Leaderboard](https://huggingface.co/spaces/AI-Secure/llm-trustworthy-leaderboard)
